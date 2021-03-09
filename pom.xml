@@ -19,7 +19,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
 		<jackson-databind.version>2.12.1</jackson-databind.version>
-		<maven.compiler.release>11</maven.compiler.release>
+		<maven.compiler.release>15</maven.compiler.release>
 		<mainClass>geolocator.GeoLocator</mainClass>
 	</properties>
 	<dependencies>
@@ -59,12 +59,6 @@
 			<version>3.11</version>
 			<scope>compile</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.18.18</version>
-			<scope>compile</scope>
-		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -92,19 +86,6 @@
 				<configuration>
 					<mainClass>${mainClass}</mainClass>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.projectlombok</groupId>
-				<artifactId>lombok-maven-plugin</artifactId>
-				<version>1.18.16.0</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>delombok</goal>
-						</goals>
-						<phase>generate-sources</phase>
-					</execution>
-				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
