@@ -1,21 +1,8 @@
 package geolocator;
 
 /**
- * Data class that represents a GeoLocation object.
+ * A record that represents a GeoLocation object.
  */
-public class GeoLocation {
-
-    private String as;
-    private String city;
-    private String country;
-    private String countryCode;
-    private String isp;
-    private double lat;
-    private double lon;
-    private String org;
-    private String query;
-    private String region;
-    private String regionName;
-    private String timezone;
-    private String zip;
-}
+record GeoLocation(String as, String city, String country, String countryCode, String isp,
+                   double lat, double lon, String org, String query, String region, String regionName,
+                    String timezone, String zip){ }
